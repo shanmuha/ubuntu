@@ -78,6 +78,7 @@
       ],
       "output_directory": "output-{{ user `vm_name` }}-virtualbox-iso",
       "shutdown_command": "echo '{{ user `ssh_password` }}'|sudo -S shutdown -P now",
+      "shutdown_timeout": "15m",
       "ssh_password": "{{ user `ssh_password` }}",
       "ssh_username": "{{ user `ssh_username` }}",
       "ssh_wait_timeout": "10000s",
